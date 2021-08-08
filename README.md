@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL]https://www.frontendmentor.io/solutions/htmlcssjsdom-DISqd5gJq)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/htmlcssjsdom-DISqd5gJq)
 - Live Site URL: [live site URL](https://gigagiorgadze.github.io/Base-Apparel-coming-soon-page/)
 
 ## My process
