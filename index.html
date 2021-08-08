@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Base Apparel coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="first">
+      <div class="firstChild">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="text">
+          <h1 id="pink">WE'RE</h1>
+          <h1 id="soon">COMING <br> SOON</h1>
+          <p class="para">
+            Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        </div>
+        <div class="form">
+          <form action="">
+            <input type="email" name="mail" id="mail">
+            <br>
+            <input type="submit" value=">" id="submit">
+            
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="second"></div>
+
+  <script>
+    const btn = document.querySelector('#submit')
+    const red = document.createElement('p')
+    red.id = 'red'
+    const form = document.querySelector('form')
+    form.addEventListener('submit', (e) =>{
+      e.preventDefault()
+    })
+    const email = document.getElementById("mail");
+
+email.addEventListener("input", function (event) {
+  if (email.validity.typeMismatch) {
+    btn.after(red)
+    red.innerText = "WRONG EMAIL"
+    email.className = 'wrong'
+  } else {
+    email.setCustomValidity("");
+    red.innerText = ''
+    email.className = ''
+  }
+});
+  </script>
+</body>
+</html>
